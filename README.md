@@ -1,2 +1,2 @@
-# DataSienceProjekt
+# DataScienceProjekt
 Non-Intrusive Load Monitoring
