@@ -442,7 +442,8 @@ if __name__ == '__main__':
 
     #SOURCE_DIR = "/Users/Felix/DefaultDesktop/csv/20180516-0001/"
     #SOURCE_DIR = "/Users/Felix/DefaultDesktop/nilm-samples/csv/20180516-felix-phone-47pro-iclever-2_4amps-charger"
-    SOURCE_DIR = "/Users/Felix/Documents/FH/NILM/Seminar/plotting/data/laptop"
+    #SOURCE_DIR = "/Users/Felix/Documents/FH/NILM/Seminar/plotting/data/laptop"
+    SOURCE_DIR = "/home/morschel/Documents/Studium/2018SS/DataScienceProjekt/DataScienceProjekt/data/laptom_single"
 
     if len(sys.argv) >= 2:
     	SOURCE_DIR = sys.argv[1]
@@ -525,8 +526,8 @@ if __name__ == '__main__':
     plt.show()
 
     # uncomment for continuous plotting of whole sample
-    # plt.ion()
-    # for i in range(minBound, maxBound):
-    #     chunk = chunks[i]
-    #     plotForDataChunk(i - minBound, totalNumChunks, chunk)
-    #     plt.pause(0.1)
+    plt.ion()
+    for i in range(minBound, maxBound):
+        chunk = chunks[i]
+        plotForDataChunk(i - minBound, totalNumChunks, chunk)
+        plt.pause(0.1)
