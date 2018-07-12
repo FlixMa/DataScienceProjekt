@@ -1,6 +1,9 @@
 # Felix .DS_Store
 .DS_Store
 
+# trained ml graph
+*.pks
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
